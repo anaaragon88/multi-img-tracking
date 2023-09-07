@@ -20,19 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hedy = await loadGLTF('./assets/hedy.gltf');
     hedy.scene.scale.set(10, 10, 10);
-    hedy.scene.position.set(0, -0.4, 0);
+    hedy.scene.position.set(0, -0.5, 0);
 
     const mary = await loadGLTF('./assets/mary.gltf');
-    mary.scene.scale.set(9, 9, 9);
-    mary.scene.position.set(0, -0.4, 0);
+    mary.scene.scale.set(8, 8, 8);
+    mary.scene.position.set(0, -0.6, 0);
 
     const lounge = await loadGLTF('./assets/lounge.gltf');
-    lounge.scene.scale.set(8, 8, 8);
-    lounge.scene.position.set(0, -0.4, 0);
+    lounge.scene.scale.set(7, 7, 7);
+    lounge.scene.position.set(0, -0.6, 0);
 
     const office = await loadGLTF('./assets/office.gltf');
     office.scene.scale.set(10, 10, 10);
-    office.scene.position.set(0, -0.4, 0);
+    office.scene.position.set(0, -0.5, 0);
 
 
     const anchor = mindarThree.addAnchor(0);
