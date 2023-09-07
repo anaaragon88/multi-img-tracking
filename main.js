@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(light);
 
     const gltf = await loadGLTF('./assets/logof5.gltf');
-    gltf.scene.scale.set(7, 7, 7);
+    gltf.scene.scale.set(5, 5, 5);
     gltf.scene.position.set(0, -0.4, 0);
 
     const hedy = await loadGLTF('./assets/hedy.gltf');
