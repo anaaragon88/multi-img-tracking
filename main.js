@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     hedy.scene.position.set(0, -0.4, 0);
 
     const mary = await loadGLTF('./assets/mary.gltf');
-    mary.scene.scale.set(12, 12, 12);
+    mary.scene.scale.set(9, 9, 9);
     mary.scene.position.set(0, -0.4, 0);
 
     const lounge = await loadGLTF('./assets/lounge.gltf');
-    lounge.scene.scale.set(10, 10, 10);
+    lounge.scene.scale.set(8, 8, 8);
     lounge.scene.position.set(0, -0.4, 0);
 
     const office = await loadGLTF('./assets/office.gltf');
@@ -50,19 +50,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const officeanchor = mindarThree.addAnchor(4);
     officeanchor.group.add(office.scene);
 
-    await mindarThree.start();
+    /*await mindarThree.start();
     renderer.setAnimationLoop(() => {
 
       renderer.render(scene, camera);
     });
-    /*const clock = new THREE.Clock();
+    */
+    const clock = new THREE.Clock();
 
     await mindarThree.start();
     renderer.setAnimationLoop(() => {
       const delta = clock.getDelta();
       gltf.scene.rotation.set(0, gltf.scene.rotation.y + delta, 0);
       renderer.render(scene, camera);
-    });*/
+    });
 
   }
   start();
